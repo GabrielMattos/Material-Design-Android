@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -6,6 +6,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="popupTheme">@style/PopupTheme</item>
+    </style>
+
+    <style name="PopupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/backgroundPopupMenu</item>
+        <item name="android:textColor">@color/colorItem</item>
     </style>
 
 </resources>
