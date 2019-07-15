@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Search icon"
+        android:id="@+id/search_id"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/cart_id"
+        android:title="Cart icon"
+        android:icon="@drawable/ic_shopping_cart"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:title="@string/item_1"
@@ -12,5 +25,7 @@
     <item
         android:title="item_3"
         android:id="@+id/id_item_3" />
+
+
 
 </menu>

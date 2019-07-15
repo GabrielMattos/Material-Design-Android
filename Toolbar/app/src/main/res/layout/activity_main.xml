@@ -13,7 +13,6 @@
         android:background="@color/colorPrimary"
         tools:ignore="MissingConstraints"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"> <!-- Fundo da Toolbar branco, deixando o texto branco -->
-
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
