@@ -8,7 +8,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:background="@drawable/header">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:src="@drawable/john"
