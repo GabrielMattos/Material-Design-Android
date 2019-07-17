@@ -9,12 +9,12 @@
             android:icon="@drawable/inbox" />
 
         <item
-            android:id="@+id/starred"
+            android:id="@+id/starred_id"
             android:title="Starred"
             android:icon="@drawable/starred" />
 
         <item
-            android:id="@+id/sent_id"
+            android:id="@+id/send_id"
             android:title="Sent Email"
             android:icon="@drawable/sent" />
 
