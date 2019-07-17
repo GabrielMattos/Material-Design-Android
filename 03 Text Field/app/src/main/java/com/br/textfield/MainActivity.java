@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     AppCompatEditText password;
     private RelativeLayout relativeLayout;
     private TextInputLayout userLayout;
+    TextInputLayout passwordLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         user = findViewById(R.id.username_textfield);
         userLayout = findViewById(R.id.username_textInputLayout);
         password = findViewById(R.id.password_textfield);
+        passwordLayout = findViewById(R.id.password_textInputLayout);
         relativeLayout = findViewById(R.id.activity_main);
 
         relativeLayout.setOnClickListener(null); //remove o focus dos campos clicando em qualquer lugar da activity
@@ -63,44 +65,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    }
 
+        passwordLayout.setCounterEnabled(true);
+        passwordLayout.setCounterMaxLength(8);
 
+    }//onCreate
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+}//MainActivity
