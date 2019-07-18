@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Button</string>
+    <string name="raised_button">RAISED BUTTON</string>
 </resources>
