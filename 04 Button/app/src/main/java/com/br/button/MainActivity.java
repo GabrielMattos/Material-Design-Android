@@ -7,10 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppCompatButton raisedButton;
     private AppCompatButton flatButton;
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
 
         raisedButton = findViewById(R.id.raised_btn);
         flatButton = findViewById(R.id.flat_btn);
+        floatingActionButton = findViewById(R.id.fab_btn);
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Teste", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         flatButton.setOnClickListener(new View.OnClickListener() {
             @Override
