@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        builder = new AlertDialog.Builder(MainActivity.this);
+        builder = new AlertDialog.Builder(MainActivity.this, R.style.ConfirmationDialogTheme);
         builder.setTitle("Select the difficulty level");
         builder.setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
             @Override
