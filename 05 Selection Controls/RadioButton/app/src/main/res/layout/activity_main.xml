@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/main_Activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButton1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_1"
+            android:layout_margin="16dp"
+            android:theme="@style/CheckBoxTheme"
+            android:checked="false"/>
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButton2_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_button_2"
+            android:layout_margin="16dp"
+            android:theme="@style/CheckBoxTheme"
+            android:checked="false"/>
+
+
+    </RadioGroup>
+
+</RelativeLayout>
