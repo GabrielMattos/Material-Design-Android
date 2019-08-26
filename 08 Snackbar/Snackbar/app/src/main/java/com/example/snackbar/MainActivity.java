@@ -20,9 +20,17 @@ public class MainActivity extends AppCompatActivity {
 
         snackbar = Snackbar.make(view,"Hello Snackbar!", Snackbar.LENGTH_INDEFINITE);
         snackbar.setDuration(10000); //Em milisegundos - 10.000 == 10 segundos
+        snackbar.setAction("OK", new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                snackbar.dismiss(); //Esconde a Snackbar
+            }
+        });
+        
         snackbar.show();
-        //snackbar.dismiss(); //Esconde a Snackbar
 
+
+        //snackbar.dismiss(); //Esconde a Snackbar
         //Snackbar.make(view, "Hello Snackbar!",Snackbar.LENGTH_SHORT).show();
     }
 }
