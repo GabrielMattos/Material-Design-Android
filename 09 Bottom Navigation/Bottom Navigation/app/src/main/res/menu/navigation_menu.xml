@@ -8,7 +8,7 @@
         android:orderInCategory="3"/>
 
     <item
-        android:id="favorites_ID"
+        android:id="@+id/favorite_ID"
         android:title="@string/favorites"
         android:icon="@drawable/fav"
         android:orderInCategory="2"/>
