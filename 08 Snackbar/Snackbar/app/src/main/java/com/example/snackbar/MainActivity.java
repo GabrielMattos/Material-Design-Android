@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
-
+    
     private Snackbar snackbar;
 
     @Override
@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         txtAction.setTextColor((getResources().getColor(R.color.colorSnackbarActionText)));
 
         snackbar.show();
-
 
         //snackbar.dismiss(); //Esconde a Snackbar
         //Snackbar.make(view, "Hello Snackbar!",Snackbar.LENGTH_SHORT).show();
