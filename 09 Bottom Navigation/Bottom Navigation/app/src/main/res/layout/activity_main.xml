@@ -5,6 +5,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/text_ID"
+        android:text="@string/recents"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,6 +27,5 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:menu="@menu/navigation_menu"/>
-        
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </RelativeLayout>
