@@ -16,6 +16,12 @@
         android:id="@+id/viewPager_ID"
         android:layout_below="@+id/toolbar_ID"/>
 
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/circleIndicator_ID"
+        android:layout_below="@+id/toolbar_ID"
+        android:layout_marginTop="170dp"/>
 
 
 
