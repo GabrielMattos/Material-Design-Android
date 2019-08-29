@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.snackbar.Snackbar;
 
 public class SlideShowAdapter extends PagerAdapter {
 
@@ -45,12 +46,18 @@ public class SlideShowAdapter extends PagerAdapter {
 
     @NonNull
     @Override
-    public Object instantiateItem(@NonNull ViewGroup container, int position) {
+    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.slideshow_layout, container, false);
         ImageView img = view.findViewById(R.id.imageview_ID);
         //img.setImageResource(images[position]);
         Glide.with(context).load(images[position]).into(img);
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Image" + (position + 1), Snackbar.LENGTH_LONG).show();
+            }
+        });
         container.addView(view);
         return view;
     }
