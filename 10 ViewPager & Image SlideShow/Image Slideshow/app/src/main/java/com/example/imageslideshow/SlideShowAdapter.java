@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.bumptech.glide.Glide;
+
 public class SlideShowAdapter extends PagerAdapter {
 
     private Context context;
@@ -47,7 +49,8 @@ public class SlideShowAdapter extends PagerAdapter {
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.slideshow_layout, container, false);
         ImageView img = view.findViewById(R.id.imageview_ID);
-        img.setImageResource(images[position]);
+        //img.setImageResource(images[position]);
+        Glide.with(context).load(images[position]).into(img);
         container.addView(view);
         return view;
     }

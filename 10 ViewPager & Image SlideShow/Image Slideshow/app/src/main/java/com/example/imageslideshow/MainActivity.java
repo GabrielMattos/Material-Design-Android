@@ -22,6 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager = findViewById(R.id.viewPager_ID);
         adapter = new SlideShowAdapter(this);
-        viewPager.setAdapter(adapter); 
+        viewPager.setAdapter(adapter);
     }
 }
