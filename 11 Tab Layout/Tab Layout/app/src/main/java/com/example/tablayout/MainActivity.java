@@ -2,12 +2,18 @@ package com.example.tablayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.TableLayout;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +22,18 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar_ID);
         setSupportActionBar(toolbar);
+
+        viewPager = findViewById(R.id.viewPager_ID);
+
+        ViewPagerAdapter myAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        myAdapter.addFragment(new OneFragment(), "ITEM ONE");
+        myAdapter.addFragment(new TwoFragment(), "ITEM TWO");
+        myAdapter.addFragment(new ThreeFragment(), "ITEM THREE");
+
+        viewPager.setAdapter(myAdapter);
+
+        tabLayout = findViewById(R.id.tabLayout_ID);
+        tabLayout.setupWithViewPager(viewPager);
 
     }
 }

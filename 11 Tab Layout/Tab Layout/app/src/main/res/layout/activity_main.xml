@@ -18,7 +18,9 @@
         android:layout_below="@+id/toolbar_ID"
         android:background="?attr/colorPrimary"
         app:tabMode="fixed"
-        app:tabGravity="fill"/>
+        app:tabGravity="fill"
+        app:tabTextColor="@color/colorTabTitle"
+        app:tabSelectedTextColor="@color/colorAccent"/>
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
