@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Collapsing Toolbar Layout</string>
     <string name="imgTest">ImagemTest</string>
+    <string name="text_1">text 1</string>
 </resources>
