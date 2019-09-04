@@ -9,18 +9,18 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class OneFragment extends Fragment {
+public class RecentsFragment extends Fragment {
 
-    private View myView;
+    private View view;
 
-    public OneFragment() {
+    public RecentsFragment() {
 
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.item_one, container, false);
-        return myView;
+        view = inflater.inflate(R.layout.recent_layout, container, false);
+        return view;
     }
 }

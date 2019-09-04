@@ -9,18 +9,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class ThreeFragment extends Fragment {
+public class NearbyFragment extends Fragment {
 
-    private View myView;
 
-    public ThreeFragment() {
+    private View view;
+
+    public NearbyFragment() {
 
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.item_one, container, false);
-        return myView;
+        view = inflater.inflate(R.layout.nearby_layout, container, false);
+        return view;
     }
 }

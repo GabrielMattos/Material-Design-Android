@@ -9,18 +9,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class TwoFragment extends Fragment {
+public class FavoritesFragment extends Fragment {
 
-    private View myView;
 
-    public TwoFragment() {
+    private View view;
+
+    public FavoritesFragment() {
 
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.item_one, container, false);
-        return myView;
+        view = inflater.inflate(R.layout.favorites_layout, container, false);
+        return view;
     }
 }

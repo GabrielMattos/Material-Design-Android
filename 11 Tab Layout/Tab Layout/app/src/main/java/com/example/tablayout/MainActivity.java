@@ -26,18 +26,18 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager_ID);
 
         ViewPagerAdapter myAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        myAdapter.addFragment(new OneFragment(), "ITEM ONE");
-        myAdapter.addFragment(new TwoFragment(), "ITEM TWO");
-        myAdapter.addFragment(new ThreeFragment(), "ITEM THREE");
-        myAdapter.addFragment(new ThreeFragment(), "ITEM FOUR");
-        myAdapter.addFragment(new ThreeFragment(), "ITEM FIVE");
-        myAdapter.addFragment(new ThreeFragment(), "ITEM SIX");
-
+        myAdapter.addFragment(new RecentsFragment(), "");
+        myAdapter.addFragment(new FavoritesFragment(), "");
+        myAdapter.addFragment(new NearbyFragment(), "");
 
         viewPager.setAdapter(myAdapter);
 
         tabLayout = findViewById(R.id.tabLayout_ID);
         tabLayout.setupWithViewPager(viewPager);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.phone);
+        tabLayout.getTabAt(1).setIcon(R.drawable.heart);
+        tabLayout.getTabAt(2).setIcon(R.drawable.account);
 
     }
 }
