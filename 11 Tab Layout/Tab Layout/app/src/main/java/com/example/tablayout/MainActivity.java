@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         myAdapter.addFragment(new OneFragment(), "ITEM ONE");
         myAdapter.addFragment(new TwoFragment(), "ITEM TWO");
         myAdapter.addFragment(new ThreeFragment(), "ITEM THREE");
+        myAdapter.addFragment(new ThreeFragment(), "ITEM FOUR");
+        myAdapter.addFragment(new ThreeFragment(), "ITEM FIVE");
+        myAdapter.addFragment(new ThreeFragment(), "ITEM SIX");
+
 
         viewPager.setAdapter(myAdapter);
 

@@ -17,7 +17,7 @@
         android:id="@+id/tabLayout_ID"
         android:layout_below="@+id/toolbar_ID"
         android:background="?attr/colorPrimary"
-        app:tabMode="fixed"
+        app:tabMode="scrollable"
         app:tabGravity="fill"
         app:tabTextColor="@color/colorTabTitle"
         app:tabSelectedTextColor="@color/colorAccent"/>
