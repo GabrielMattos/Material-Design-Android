@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewPager_ID);
 
         ViewPagerAdapter myAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        myAdapter.addFragment(new RecentsFragment(), "");
-        myAdapter.addFragment(new FavoritesFragment(), "");
-        myAdapter.addFragment(new NearbyFragment(), "");
+        myAdapter.addFragment(new RecentsFragment(), "RECENTS");
+        myAdapter.addFragment(new FavoritesFragment(), "FAVORITES");
+        myAdapter.addFragment(new NearbyFragment(), "NEARBY");
 
         viewPager.setAdapter(myAdapter);
 

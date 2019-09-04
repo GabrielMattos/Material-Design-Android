@@ -20,7 +20,7 @@
         app:tabMode="fixed"
         app:tabGravity="fill"
         app:tabTextColor="@color/colorTabTitle"
-        app:tabSelectedTextColor="@color/colorAccent"/>
+        app:tabSelectedTextColor="@color/colorTabTitle"/>
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
