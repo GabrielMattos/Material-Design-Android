@@ -10,20 +10,39 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cardview_ID"
+        android:id="@+id/cardview1_ID"
         android:layout_margin="16dp"
         app:cardBackgroundColor="@color/colorCardBackground"
-        app:contentPadding="16dp">
+        app:contentPadding="12dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/e15259fcdb2c77531ccea6d5e799ef5c"
+            android:contentDescription="@string/img1"
+            android:scaleType="fitXY"/>
 
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview2_ID"
+        android:layout_below="@+id/cardview1_ID"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/colorCardBackground"
+        app:contentPadding="12dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/e15259fcdb2c77531ccea6d5e799ef5c"
+            android:contentDescription="@string/img2"
+            android:scaleType="fitXY"/>
 
     </com.google.android.material.card.MaterialCardView>
 

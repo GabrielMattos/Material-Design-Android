@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CardView</string>
+    <string name="img1">Image 1</string>
+    <string name="img2">Image 2</string>
 </resources>
