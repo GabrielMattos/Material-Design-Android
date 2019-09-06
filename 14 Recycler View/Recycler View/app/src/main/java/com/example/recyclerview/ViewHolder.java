@@ -12,9 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.w3c.dom.Text;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ViewHolder extends RecyclerView.ViewHolder {
 
-    public AppCompatImageView myImage;
+    public CircleImageView myImage;
     public TextView textViewName;
     public TextView textViewDescription;
     public LinearLayout linearLayout;
