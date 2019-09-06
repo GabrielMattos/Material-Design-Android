@@ -16,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
     private AppCompatSeekBar appCompatSeekBar;
     private TextView txtSeekBarValue;
     private TextView txtRangeBarValue;
+    private TextView txtRangeBarLeftValue;
+    private TextView txtRangeBarRightValue;
     private RangeBar rangeBar1;
+    private RangeBar rangeBar2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
         appCompatSeekBar = findViewById(R.id.SeekBar_ID);
         txtSeekBarValue = findViewById(R.id.AppCompatSeekBarValue_ID);
         rangeBar1 = findViewById(R.id.RangeBar1_ID);
+        rangeBar2 = findViewById(R.id.RangeBar2_ID);
         txtRangeBarValue = findViewById(R.id.RangeBar2TXT_ID);
+        txtRangeBarLeftValue = findViewById(R.id.RangeBar2LeftValue_ID);
+        txtRangeBarRightValue = findViewById(R.id.RangeBar2RightValue_ID);
 
         appCompatSeekBar.setProgress(0);
         appCompatSeekBar.setKeyProgressIncrement(1);
@@ -59,6 +65,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
                 txtRangeBarValue.setText(rightPinValue);
+            }
+
+            @Override
+            public void onTouchStarted(RangeBar rangeBar) {
+
+            }
+
+            @Override
+            public void onTouchEnded(RangeBar rangeBar) {
+
+            }
+        });
+
+        rangeBar2.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
+            @Override
+            public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
+                txtRangeBarLeftValue.setText(leftPinValue);
+                txtRangeBarRightValue.setText(rightPinValue);
             }
 
             @Override
