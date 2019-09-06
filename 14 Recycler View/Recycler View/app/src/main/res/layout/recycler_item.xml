@@ -4,7 +4,9 @@
     android:layout_height="100dp"
     android:layout_marginTop="8dp"
     android:gravity="end"
-    android:id="@+id/reclyclerItem_ID">
+    android:id="@+id/reclyclerItem_ID"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="70dp"

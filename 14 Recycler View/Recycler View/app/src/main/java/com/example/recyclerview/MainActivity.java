@@ -2,6 +2,7 @@ package com.example.recyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -83,7 +84,11 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
+
+        //GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
+        //recyclerView.setLayoutManager(gridLayoutManager);
+
         recyclerView.setHasFixedSize(true);
-        recyclerView.setAdapter(new RecyclerAdapter(sampleUser));
+        recyclerView.setAdapter(new RecyclerAdapter(getBaseContext(),sampleUser));
     }
 }
