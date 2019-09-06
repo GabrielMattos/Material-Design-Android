@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SeekBar_ID"
+        android:layout_margin="30dp"
+        android:isScrollContainer="true"
+        android:max="100"
+        android:theme="@style/SeekBarTheme"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SeekBarTXT_ID"
+        android:text="@string/appcompatseekbar"
+        android:textStyle="bold"
+        android:layout_below="@+id/SeekBar_ID"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AppCompatSeekBarValue_ID"
+        android:text="@string/zero"
+        android:layout_below="@+id/SeekBar_ID"
+        android:layout_marginLeft="170dp"
+        android:layout_marginStart="170dp"/>
+
+</RelativeLayout>
